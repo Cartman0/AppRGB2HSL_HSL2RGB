@@ -70,10 +70,10 @@ class Color {
   }
 
   toHEX() {
-    return '#' + parseInt(this.r_)
-      .toString(16) + parseInt(this.g_)
-      .toString(16) + parseInt(this.b_)
-      .toString(16);
+    return '#' +
+    parseInt(this.r_).toString(16).replace(/^([0-9]|[a-f])$/, '0$&') +
+    parseInt(this.g_).toString(16).replace(/^([0-9]|[a-f])$/, '0$&') +
+    parseInt(this.b_).toString(16).replace(/^([0-9]|[a-f])$/, '0$&');
   }
 
   // setter hsl
@@ -146,7 +146,6 @@ class Color {
     this.r_ = parseInt(Math.round(r_norm * 255));
     this.g_ = parseInt(Math.round(g_norm * 255));
     this.b_ = parseInt(Math.round(b_norm * 255));
-    // console.log('hsl2rgb; ' + this.r_ +' '+ this.g_  + ' '+ this.b_);
   }
 
   _hsl2rgb(m1, m2, h) {
@@ -170,7 +169,6 @@ class Color {
     return m1;
   }
 
-
   _calcHueNorm(r, g, b) {
     var color_arr = [r, g, b];
     var h_norm = 0.0;
@@ -181,14 +179,11 @@ class Color {
     } else if ((color_arr[0] >= color_arr[1]) && (color_arr[0] >= color_arr[2])) {
       // r最大の場合
       h_norm = ((color_arr[1] - color_arr[2]) / (Math.max.apply(null, color_arr) - Math.min.apply(null, color_arr))) / 6;
-      // console.log('r max: ' + color_arr[0] + ' ' + color_arr[1] + ' ' + color_arr[2]);
     } else if ((color_arr[1] >= color_arr[0]) && (color_arr[1] >= color_arr[2])) {
       // g最大の場合
       h_norm = ((color_arr[2] - color_arr[1]) / (Math.max.apply(null, color_arr) - Math.min.apply(null, color_arr))) / 6 + 1 / 3;
-      // console.log('g max');
     } else if ((color_arr[2] >= color_arr[0]) && (color_arr[2] >= color_arr[1])) {
       // b最大の場合
-      // console.log('b max');
       h_norm = ((color_arr[0] - color_arr[1]) / (Math.max.apply(null, color_arr) - Math.min.apply(null, color_arr))) / 6 + 2 / 3;
     }
 
@@ -218,7 +213,6 @@ class Color {
     } else {
       s = (max - min) / (510 - max - min);
     }
-    // console.log('s; '+s);
     return s;
   }
   _calcSaturation(r, g, b) {
