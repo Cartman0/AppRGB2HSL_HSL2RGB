@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RGBtoHSL HSLtoRGB</title>
+
+    <link rel="stylesheet" href="stylesheets/screen.css">
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <link rel="stylesheet" href="stylesheets/print.css">
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+
+  </head>
+
+  <body>
+    <header>
+      <h1 class="title">RGBtoHSL HSLtoRGB</h1>
+    </header>
+
+    <main>
+      <fieldset class="input-box">
+        <legend>
+          <h2>RGB HSL Converter</h2>
+        </legend>
+        <div class="input-box__items">
+          <fieldset class="input-box__item_rgb">
+            <legend class="input-box__header_rgb">
+              <h3>RGB</h3>
+            </legend>
+            <div class="input-box__inputs_rgb">
+              <fieldset>
+                <legend>
+                  R:
+                </legend>
+                <div class="input-box__inputsWrap_rgb input-box__inputsWrap_rgb_r">
+                  <input class="input-box__range_rgb input-box__range_rgb_r" type="range" max="255" min="0" value="255">
+                  <input class="input-box__number_rgb input-box__number_rgb_r" type="number" max="255" min="0">
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>
+                  G:
+                </legend>
+                <div class="input-box__inputsWrap_rgb input-box__inputsWrap_rgb_g">
+                  <input class="input-box__range_rgb input-box__range_rgb_g" type="range" max="255" min="0" value="255">
+                  <input class="input-box__number_rgb input-box__number_rgb_g" type="number" max="255" min="0">
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>
+                  B:
+                </legend>
+                <div class="input-box__inputsWrap_rgb input-box__inputsWrap_rgb_b">
+                  <input class="input-box__range_rgb input-box__range_rgb_b" type="range" max="255" min="0" value="255">
+                  <input class="input-box__number_rgb input-box__number_rgb_b" type="number" max="255" min="0">
+              </div>
+              </fieldset>
+            </div>
+            <div class="input-box__results_rgb">
+              <textarea class="input-box__result_rgb10" rows="1"></textarea>
+              <textarea class="input-box__result_rgbHex" rows="1"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset class="input-box__item_hsl">
+            <legend class="input-box__header_hsl">
+              <h3>HSL</h3>
+            </legend>
+            <div class="input-box__inputs_hsl">
+              <fieldset>
+                <legend>
+                  Hue:
+                </legend>
+                <div class="input-box__inputsWrap_hsl input-box__inputsWrap_hsl_h">
+                  <input class="input-box__range_hsl input-box__range_hsl_h" type="range" max="360" min="0" value="0">
+                  <input class="input-box__number_hsl input-box__number_hsl_h" type="number" max="360" min="0">
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>
+                  Saturation:
+                </legend>
+                <div class="input-box__inputsWrap_hsl input-box__inputsWrap_hsl_s">
+                  <input class="input-box__range_hsl input-box__range_hsl_s" type="range" max="100" min="0" value="0">
+                  <input class="input-box__number_hsl input-box__number_hsl_s" type="number" max="100" min="0">
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>
+                  Lightness:
+                </legend>
+                <div class="input-box__inputsWrap_hsl input-box__inputsWrap_hsl_l">
+                  <input class="input-box__range_hsl input-box__range_hsl_l" type="range" max="100" min="0" value="100">
+                  <input class="input-box__number_hsl input-box__number_hsl_l" type="number" max="100" min="0">
+                </div>
+              </fieldset>
+            </div>
+            <div class="input-box__results_hsl">
+              <textarea class="input-box__result_hsl" rows="1"></textarea>
+            </div>
+          </fieldset>
+        </div>
+
+      </fieldset>
+    </main>
+
+    <footer>
+      <small>&copy; cartman 2015</small>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="javascripts/Color.js"></script>
+    <script src="javascripts/main.js"></script>
+  </body>
+</html>

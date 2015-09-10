@@ -1,0 +1,16 @@
+@import 'compass/css3/box-sizing';
+
+footer {
+  height: 5vh;
+  min-height: 2rem;
+  // margin-top: 1vh;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  @include box-sizing(border-box);
+
+  text-align: center;
+  font-size: 0.8rem;
+
+  background-color: $black;
+  color: $white;
+}

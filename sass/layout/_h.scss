@@ -1,0 +1,46 @@
+$h1_size: 2rem;
+$each_ratio: 0.85;
+
+@function calc_size($parent_size, $ratio) {
+  @return $parent_size * $ratio;
+}
+
+$h2_size: calc_size($h1_size, $each_ratio);
+$h3_size: calc_size($h2_size, $each_ratio);
+$h4_size: calc_size($h3_size, $each_ratio);
+$h5_size: calc_size($h4_size, $each_ratio);
+$h6_size: calc_size($h5_size, $each_ratio);
+
+%common_h {
+  font-weight: bold;
+}
+
+h1 {
+  @extend %common_h;
+  font-size: $h1_size;
+}
+
+h2 {
+  @extend %common_h;
+  font-size: $h2_size;
+}
+
+h3 {
+  @extend %common_h;
+  font-size: $h3_size;
+}
+
+h4 {
+  @extend %common_h;
+  font-size: $h4_size;
+}
+
+h5 {
+  @extend %common_h;
+  font-size: $h5_size;
+}
+
+h6 {
+  @extend %common_h;
+  font-size: $h6_size;
+}

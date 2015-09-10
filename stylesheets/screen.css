@@ -1,0 +1,269 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 20, ../sass/screen.scss */
+html, body {
+  font-family: 'Noto Sans Japanese', sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+/* line 1, ../sass/layout/_header.scss */
+header {
+  height: 10vh;
+  min-height: 3rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+/* line 11, ../sass/layout/_header.scss */
+.title {
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+}
+
+/* line 1, ../sass/layout/_main.scss */
+main {
+  width: 95%;
+  min-height: 80.5vh;
+  margin: 1rem auto;
+}
+
+/* line 14, ../sass/layout/_h.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* line 18, ../sass/layout/_h.scss */
+h1 {
+  font-size: 2rem;
+}
+
+/* line 23, ../sass/layout/_h.scss */
+h2 {
+  font-size: 1.7rem;
+}
+
+/* line 28, ../sass/layout/_h.scss */
+h3 {
+  font-size: 1.445rem;
+}
+
+/* line 33, ../sass/layout/_h.scss */
+h4 {
+  font-size: 1.22825rem;
+}
+
+/* line 38, ../sass/layout/_h.scss */
+h5 {
+  font-size: 1.04401rem;
+}
+
+/* line 43, ../sass/layout/_h.scss */
+h6 {
+  font-size: 0.88741rem;
+}
+
+/* line 3, ../sass/layout/_footer.scss */
+footer {
+  height: 5vh;
+  min-height: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 0.8rem;
+  background-color: #333;
+  color: #fafafa;
+}
+
+/* line 4, ../sass/modules/_input-box.scss */
+.input-box {
+  width: 90%;
+  height: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 13, ../sass/modules/_input-box.scss */
+.input-box__items {
+  width: 100%;
+  height: 50%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+/* line 22, ../sass/modules/_input-box.scss */
+.input-box__item_rgb,
+.input-box__item_hsl {
+  width: 45%;
+  min-height: 50%;
+  border: 1px solid #333;
+  -moz-border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* line 40, ../sass/modules/_input-box.scss */
+.input-box__header_rgb,
+.input-box__header_hsl {
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  -webkit-padding-start: 0;
+  -webkit-padding-end: 0;
+}
+
+/* line 49, ../sass/modules/_input-box.scss */
+.input-box__inputs_rgb,
+.input-box__inputs_hsl {
+  display: block;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 58, ../sass/modules/_input-box.scss */
+.input-box__inputsWrap_rgb,
+.input-box__inputsWrap_hsl {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+/* line 67, ../sass/modules/_input-box.scss */
+.input-box__range_rgb,
+.input-box__range_hsl {
+  width: 75%;
+}
+
+/* line 72, ../sass/modules/_input-box.scss */
+.input-box__number_rgb,
+.input-box__number_hsl {
+  width: 15%;
+  min-width: 2.5rem;
+  -moz-border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+}
+
+/* line 79, ../sass/modules/_input-box.scss */
+.input-box__results_rgb {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+/* line 86, ../sass/modules/_input-box.scss */
+.input-box__results_hsl {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* line 93, ../sass/modules/_input-box.scss */
+.input-box__result_rgb10,
+.input-box__result_rgbHex,
+.input-box__result_hsl {
+  width: 12rem;
+  -moz-border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  font-family: 'Noto Sans Japanese', sans-serif;
+}

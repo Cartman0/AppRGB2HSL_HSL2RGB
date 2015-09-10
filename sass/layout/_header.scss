@@ -1,0 +1,14 @@
+header {
+  height: 10vh;
+  min-height: 3rem;
+  @include box-sizing(border-box);
+  text-align: center;
+  background-color: $gray;
+
+  @include debug_outline(orange);
+}
+
+.title {
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+}

@@ -1,0 +1,100 @@
+@import 'compass/css3/flexbox';
+@import 'compass/css3/border-radius';
+
+.input-box {
+  width: 90%;
+  height: 90%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include debug_outline(red);
+}
+
+.input-box__items {
+  width: 100%;
+  height: 50%;
+  @include display-flex(flex);
+  @include flex-direction(row);
+  @include justify-content(space-around);
+  @include flex-wrap(wrap);
+}
+
+.input-box__item_rgb,
+.input-box__item_hsl {
+  width: 45%;
+  min-height: 50%;
+  border: 1px solid #333;
+  @include border-radius(0.5rem);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.input-box__item_rgb {
+  @include debug_outline(green);
+}
+
+ .input-box__item_hsl{
+  @include debug_outline(blue);
+}
+
+.input-box__header_rgb,
+.input-box__header_hsl {
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  -webkit-padding-start: 0;
+  -webkit-padding-end: 0;
+}
+
+.input-box__inputs_rgb,
+.input-box__inputs_hsl {
+  display: block;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  @include debug_outline(pink);
+}
+
+.input-box__inputsWrap_rgb,
+.input-box__inputsWrap_hsl {
+  width: 100%;
+  @include display-flex(flex);
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+}
+
+.input-box__range_rgb,
+.input-box__range_hsl {
+  width: 75%;
+}
+
+.input-box__number_rgb,
+.input-box__number_hsl {
+  width: 15%;
+  min-width: 2.5rem;
+  @include border-radius(0.3rem);
+}
+
+.input-box__results_rgb {
+  @include display-flex(flex);
+  @include flex-direction(row);
+  @include flex-wrap(wrap);
+  @include justify-content(space-around);
+  margin-top: 1rem;
+}
+.input-box__results_hsl {
+  @include display-flex(flex);
+  @include flex-direction(row);
+  @include justify-content(center);
+  margin-top: 1rem;
+}
+
+.input-box__result_rgb10,
+.input-box__result_rgbHex,
+.input-box__result_hsl {
+  width: 12rem;
+  @include border-radius(0.3rem);
+  font-size: 1.2rem;
+  font-family: 'Noto Sans Japanese', sans-serif;
+}
